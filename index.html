@@ -699,7 +699,7 @@ canvas {
         <div class="tag">✦ Le fêtard du soir ✦</div>
         <div class="gold-line"></div>
         <div class="big-name" style="margin-top:20px"><em>Wilfried</em></div>
-        <div class="sub-italic">souffle ses 25 bougies 🎂</div>
+        <div class="sub-italic">souffle sa 25ième bougie 🎂</div>
         <div class="gold-line"></div>
         <div class="body-text" style="margin-top:22px">
           Un petit fou comme on en fait peu —<br>
@@ -717,23 +717,27 @@ canvas {
       <div class="counter">02 / 10</div>
     </div>
 
-    <!-- ══════════ PAGE 3 — INVITÉ À L'HONNEUR ══════════ -->
+    <!-- ══════════ PAGE 3 — DATE & ANNIVERSAIRE ══════════ -->
     <div class="page" id="page-3">
       <div class="page-content">
-      <div class="top-emoji">⭐</div>
-      <div class="tag">✦ Ce soir, vous brillez ✦</div>
-      <div class="honor-box">
-        <div class="honor-label">✦ Invité(e) d'honneur ✦</div>
-        <div class="honor-name" id="guestHonor">Invité(e)</div>
-        <div class="honor-desc">
-          Votre présence n'est pas simplement souhaitée —<br>
-          elle est le cœur de cette soirée.<br>
-          Nous avons pensé à vous en la préparant.
-        </div>
+      <div class="top-emoji">🎂</div>
+      <div class="tag">✦ Une précision importante ✦</div>
+      <div class="gold-line"></div>
+
+      <div style="text-align:center;margin:24px 0 20px;">
+        <div style="font-size:52px;margin-bottom:14px;">🎉</div>
+        <div style="font-family:'Playfair Display',serif;font-size:38px;font-style:italic;color:#fff;margin-bottom:12px;">Rendez-vous le</div>
+        <div style="font-family:'Playfair Display',serif;font-size:80px;font-weight:700;color:#fff;line-height:1;letter-spacing:4px;margin-bottom:20px;">21 Mars</div>
+        <div style="font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#fff;margin-bottom:6px;">À 17h pile</div>
       </div>
-      <div class="body-text">
-        Un bon mood vous attend.<br>
-        Une attention particulière.
+
+      <div class="gold-line" style="margin:24px auto;"></div>
+
+      <div class="body-text" style="margin-top:20px;">
+        <span style="font-size:11px;color:rgba(255,255,255,0.5);letter-spacing:1px;text-transform:uppercase;">Petite précision</span><br><br>
+        Son anniversaire c'est le <strong style="color:#fff;font-style:normal;">18 Mars</strong>,<br>
+        mais on fête le <strong style="color:#fff;font-style:normal;font-size:15px;">21 Mars</strong><br>
+        pour que tout le monde puisse être là. 🔥
       </div>
       </div>
       <div class="nav">
@@ -1082,7 +1086,6 @@ canvas {
 const params = new URLSearchParams(window.location.search);
 const guestName = params.get('invitation') || params.get('prenom') || params.get('nom') || 'Michele';
 document.getElementById('guestDisplay').textContent = guestName;
-document.getElementById('guestHonor').textContent = guestName;
 document.getElementById('guestFinal').textContent = guestName;
 
 // ── Stepper logic ────────────────────────────────
